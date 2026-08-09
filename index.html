@@ -3,7 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alex Donnelly — Medical-Legal & Litigation Visualization</title>
+<title>Alex Donnelly — Litigation Visualization & Medical-Legal Communication</title>
+<meta name="description" content="Alex Donnelly — litigation professional and biomedical visualizer. Medical-legal visualization, trial demonstratives, and the visual communication of complex evidence for legal teams.">
+<meta property="og:title" content="Alex Donnelly — Litigation Visualization & Medical-Legal Communication">
+<meta property="og:description" content="Visual strategy and design for explaining complex evidence, medicine, and technology to legal audiences.">
+<meta property="og:type" content="website">
 <style>
   :root{
     --bg:#f7f6f3; --panel:#ffffff; --ink:#1c1b19; --muted:#6c675f;
@@ -21,7 +25,8 @@
   .contact{font-family:"Helvetica Neue",Arial,sans-serif;font-size:.9rem;color:var(--muted);}
   .contact a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line);}
   .contact a:hover{color:var(--accent);}
-  .intro{max-width:760px;margin:30px 0 6px;font-size:1.12rem;color:#33302b;}
+  .intro{max-width:800px;margin:30px 0 6px;font-size:1.16rem;color:#2c2a26;line-height:1.62;}
+  .intro .lead{font-size:1.3rem;color:var(--ink);display:block;margin-bottom:12px;}
   section{padding:52px 0 8px;}
   h2{font-size:1.5rem;font-weight:600;margin:0 0 6px;}
   .sub{font-family:"Helvetica Neue",Arial,sans-serif;font-size:.82rem;letter-spacing:2px;
@@ -30,114 +35,110 @@
   figure{margin:0;background:var(--panel);border:1px solid var(--line);border-radius:6px;overflow:hidden;
     box-shadow:0 6px 22px rgba(20,18,15,.05);transition:transform .18s ease, box-shadow .18s ease;}
   figure:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(20,18,15,.12);}
-  figure img{display:block;width:100%;height:280px;object-fit:cover;cursor:zoom-in;background:#eceae6;}
-  figure.tall img{height:420px;object-fit:contain;padding:6px;}
-  figcaption{padding:13px 15px 16px;font-family:"Helvetica Neue",Arial,sans-serif;
-    font-size:.82rem;line-height:1.45;color:var(--muted);}
-  figcaption b{color:var(--ink);font-weight:600;display:block;margin-bottom:2px;font-size:.9rem;}
+  figure img{display:block;width:100%;height:275px;object-fit:cover;cursor:zoom-in;background:#eceae6;}
+  figure.tall img{height:430px;object-fit:contain;padding:6px;}
+  figcaption{padding:13px 16px 17px;font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:.83rem;line-height:1.5;color:var(--muted);}
+  figcaption b{color:var(--ink);font-weight:600;display:block;margin-bottom:3px;font-size:.92rem;}
+  .note{font-family:"Helvetica Neue",Arial,sans-serif;font-size:.9rem;color:var(--muted);
+    max-width:760px;margin:2px 0 24px;font-style:italic;}
   footer{margin-top:60px;padding:34px 0 60px;border-top:1px solid var(--line);
     font-family:"Helvetica Neue",Arial,sans-serif;font-size:.85rem;color:var(--muted);}
+  footer .deg{color:var(--ink);}
   /* lightbox */
   #lb{position:fixed;inset:0;background:rgba(18,16,14,.94);display:none;align-items:center;
-    justify-content:center;z-index:50;padding:30px;cursor:zoom-out;}
+    justify-content:center;z-index:50;padding:34px;}
   #lb.open{display:flex;}
-  #lb img{max-width:95%;max-height:92%;object-fit:contain;box-shadow:0 20px 60px rgba(0,0,0,.5);}
+  #lb img{max-width:94%;max-height:90%;object-fit:contain;box-shadow:0 20px 60px rgba(0,0,0,.5);cursor:zoom-out;}
+  #lbClose{position:fixed;top:16px;right:22px;width:44px;height:44px;border:none;border-radius:50%;
+    background:rgba(255,255,255,.12);color:#fff;font-size:1.7rem;line-height:1;cursor:pointer;
+    font-family:Arial,sans-serif;}
+  #lbClose:hover{background:rgba(255,255,255,.24);}
   #lb .cap{position:fixed;bottom:18px;left:0;right:0;text-align:center;color:#e8e4dc;
     font-family:"Helvetica Neue",Arial,sans-serif;font-size:.85rem;padding:0 20px;}
-  @media(max-width:600px){h1{font-size:2rem;}figure img{height:230px;}}
+  @media(max-width:600px){h1{font-size:2rem;}.intro .lead{font-size:1.15rem;}figure img{height:230px;}}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
     <h1>Alex Donnelly</h1>
-    <p class="tagline">Medical-Legal &amp; Litigation Visualization · Medical Illustration · Trial Demonstratives</p>
+    <p class="tagline">Litigation Visualization · Biomedical Visualization · Trial Graphics &amp; Complex Evidence</p>
     <p class="contact">Highland Park, IL &nbsp;·&nbsp; (847)&nbsp;338-8208 &nbsp;·&nbsp;
       <a href="mailto:a.james.donnelly@gmail.com">a.james.donnelly@gmail.com</a> &nbsp;·&nbsp;
       <a href="https://www.linkedin.com/in/alexjdonnelly">linkedin.com/in/alexjdonnelly</a></p>
-    <p class="intro">I am a visual artist and medical illustrator with graduate training in fine art, visual
-      design, and biomedical visualization, and fifteen years working inside litigation. My work takes complex
-      medical, scientific, and technical subjects and makes them clear and persuasive, the same problem at the
-      center of trial graphics and demonstrative evidence. A selection is below.</p>
+    <p class="intro"><span class="lead">I help legal teams explain complex evidence, medicine, technology, and
+      business information through visual strategy and design.</span>
+      My work draws on fifteen years inside litigation, graduate training in visual art and biomedical
+      visualization, and current research into how jurors understand medical testimony and demonstrative
+      evidence. The work below is a selection of visualization and design; detailed project case studies are
+      available on request.</p>
   </header>
 
   <section>
     <h2>Medical-Legal &amp; Demonstrative Work</h2>
     <p class="sub">Explanatory graphics · procedure &amp; device visualization</p>
     <div class="grid">
-      <figure class="tall"><img src="images/medlegal-critical-view-of-safety.jpg" alt="Critical View of Safety surgical explainer">
-        <figcaption><b>Identification of the Critical View of Safety</b>Step-by-step surgical procedure explainer (laparoscopic cholecystectomy), the kind of demonstrative used to convey a procedure and standard of care. Digital illustration.</figcaption></figure>
-      <figure class="tall"><img src="images/medlegal-chest-tube.jpg" alt="Chest tube placement procedural graphic">
-        <figcaption><b>Chest Tube Placement — Procedural Demonstrative</b>A step-by-step procedure and safety checklist (Triangle of Safety, equipment, surgical time-out), designed so a non-clinical viewer can follow what should happen and in what order. The form of a standard-of-care exhibit.</figcaption></figure>
-      <figure class="tall"><img src="images/medlegal-syringe-patent-3d.jpg" alt="Medical device 3D render with patent drawing">
-        <figcaption><b>Medical Device Visualization</b>3D render of a drug-delivery device paired with its source patent drawing, translating a technical filing into a clear visual. Modeled in Cinema 4D, rendered multi-pass in Redshift, and composited in Photoshop.</figcaption></figure>
-      <figure class="tall"><img src="images/medlegal-poster.jpg" alt="Scientific communication poster">
-        <figcaption><b>Scientific Communication Poster</b>Complex findings organized for a non-expert audience. Biomedical Visualization.</figcaption></figure>
-      <figure><img src="images/medlegal-child-sleep.jpg" alt="Full-color medical illustration">
-        <figcaption><b>Medical Illustration</b>Full-color rendered illustration.</figcaption></figure>
-      <figure><img src="images/medlegal-data-segmentation.jpg" alt="Anatomical data segmentation">
-        <figcaption><b>Anatomical Data Segmentation</b>Imaging data segmented and visualized. Biomedical Visualization.</figcaption></figure>
-      <figure><img src="images/medlegal-hippocampus.jpg" alt="Neuroanatomy illustration">
-        <figcaption><b>Neuroanatomy</b>Hippocampus illustration.</figcaption></figure>
-      <figure><img src="images/medlegal-bvis510.jpg" alt="Medical illustration">
-        <figcaption><b>Medical Illustration</b>Biomedical Visualization.</figcaption></figure>
+      <figure class="tall"><img loading="lazy" src="images/medlegal-critical-view-of-safety.jpg" alt="Critical View of Safety surgical explainer">
+        <figcaption><b>Identification of the Critical View of Safety</b>Graduate project connected to my research on communicating hepatobiliary surgery. Built so a non-clinical viewer can follow each step of a laparoscopic gallbladder removal and see the anatomy that must be protected. Digital illustration.</figcaption></figure>
+      <figure class="tall"><img loading="lazy" src="images/medlegal-chest-tube.jpg" alt="Chest tube placement procedural graphic">
+        <figcaption><b>Chest Tube Placement</b>Graphic-design coursework. A procedural checklist and diagram designed so a reader can follow the steps, equipment, and safety checks (Triangle of Safety, time-out) in the correct order. Information design.</figcaption></figure>
+      <figure class="tall"><img loading="lazy" src="images/medlegal-syringe-patent-3d.jpg" alt="Medical device 3D render with patent drawing">
+        <figcaption><b>Medical Device Visualization</b>The problem: a patent drawing communicates a device to examiners, not to a lay viewer. I interpreted the source filing into an accurate 3D model, verifying each part against the patent, to show the device clearly. Cinema 4D, Redshift, Photoshop.</figcaption></figure>
+      <figure><img loading="lazy" src="images/medlegal-poster.jpg" alt="Science communication poster">
+        <figcaption><b>Ultrasound Elastography of Hashimoto's Thyroiditis</b>Science-communication poster translating a diagnostic technique for a non-expert audience. Biomedical Visualization.</figcaption></figure>
+      <figure><img loading="lazy" src="images/medlegal-data-segmentation.jpg" alt="Anatomical data segmentation">
+        <figcaption><b>Anatomical Data Segmentation</b>Segmenting and visualizing structures from medical imaging data, the foundation for 3D models. Biomedical Visualization.</figcaption></figure>
+      <figure><img loading="lazy" src="images/medlegal-child-sleep.jpg" alt="Full-color medical illustration">
+        <figcaption><b>Rendered Medical Illustration</b>Full-color anatomical illustration. Biomedical Visualization coursework.</figcaption></figure>
+      <figure><img loading="lazy" src="images/medlegal-hippocampus.jpg" alt="Neuroanatomy illustration">
+        <figcaption><b>Neuroanatomy</b>Hippocampus illustration. Biomedical Visualization.</figcaption></figure>
+      <figure><img loading="lazy" src="images/medlegal-bvis510.jpg" alt="Medical illustration">
+        <figcaption><b>Medical Illustration</b>Biomedical Visualization coursework.</figcaption></figure>
     </div>
   </section>
 
   <section>
-    <h2>Anatomical &amp; Medical Illustration</h2>
-    <p class="sub">Systems, vasculature &amp; structures</p>
+    <h2>Selected Visual Work</h2>
+    <p class="sub">Anatomical illustration &amp; foundational craft</p>
+    <p class="note">Supporting work that demonstrates anatomical accuracy, technical command, and drawing
+      fundamentals underneath the applied projects above.</p>
     <div class="grid">
-      <figure><img src="images/anatomy-urinary-system.jpg" alt="Urinary system illustration">
+      <figure><img loading="lazy" src="images/anatomy-urinary-system.jpg" alt="Urinary system illustration">
         <figcaption><b>Urinary System</b>Anatomical illustration.</figcaption></figure>
-      <figure><img src="images/anatomy-celiac-trunk.jpg" alt="Celiac trunk vasculature">
+      <figure><img loading="lazy" src="images/anatomy-celiac-trunk.jpg" alt="Celiac trunk vasculature">
         <figcaption><b>Celiac Trunk &amp; Hepatic Vasculature</b>Vascular anatomy.</figcaption></figure>
-      <figure><img src="images/anatomy-splenic-artery.jpg" alt="Splenic and left gastric arteries">
+      <figure><img loading="lazy" src="images/anatomy-splenic-artery.jpg" alt="Splenic and left gastric arteries">
         <figcaption><b>Splenic &amp; Left Gastric Arteries</b>Vascular anatomy.</figcaption></figure>
-      <figure><img src="images/anatomy-liver-front.jpg" alt="Liver anatomical study">
+      <figure><img loading="lazy" src="images/anatomy-liver-front.jpg" alt="Liver anatomical study">
         <figcaption><b>Liver</b>Anatomical study.</figcaption></figure>
-      <figure><img src="images/anatomy-liver-top.jpg" alt="Liver superior view">
-        <figcaption><b>Liver, Superior View</b>Anatomical study.</figcaption></figure>
-      <figure><img src="images/anatomy-hand.jpg" alt="Hand anatomical study">
+      <figure><img loading="lazy" src="images/anatomy-hand.jpg" alt="Hand anatomical study">
         <figcaption><b>Hand</b>Anatomical study.</figcaption></figure>
-      <figure><img src="images/anatomy-bvis500.jpg" alt="Anatomical illustration">
-        <figcaption><b>Anatomical Illustration</b>Biomedical Visualization.</figcaption></figure>
-    </div>
-  </section>
-
-  <section>
-    <h2>Figure Drawing &amp; Studies</h2>
-    <p class="sub">Foundational craft · observation &amp; anatomy</p>
-    <div class="grid">
-      <figure><img src="images/figure-fullbody-1.jpg" alt="Figure study">
+      <figure><img loading="lazy" src="images/figure-fullbody-1.jpg" alt="Figure study">
         <figcaption><b>Figure Study</b>Life drawing.</figcaption></figure>
-      <figure><img src="images/figure-fullbody-2.jpg" alt="Figure study">
-        <figcaption><b>Figure Study</b>Life drawing.</figcaption></figure>
-      <figure><img src="images/figure-head-1.jpg" alt="Portrait study">
+      <figure><img loading="lazy" src="images/figure-head-1.jpg" alt="Portrait study">
         <figcaption><b>Head Study</b>Portrait drawing.</figcaption></figure>
-      <figure><img src="images/figure-head-2.jpg" alt="Portrait study">
-        <figcaption><b>Head Study</b>Portrait drawing.</figcaption></figure>
-      <figure><img src="images/figure-hands.jpg" alt="Hand studies">
-        <figcaption><b>Hand Studies</b>Observational drawing.</figcaption></figure>
-      <figure><img src="images/figure-gesture.jpg" alt="Gesture drawing">
+      <figure><img loading="lazy" src="images/figure-gesture.jpg" alt="Gesture drawing">
         <figcaption><b>Gesture Drawing</b>Timed study.</figcaption></figure>
-      <figure><img src="images/figure-perspective.jpg" alt="Perspective study">
-        <figcaption><b>Perspective Study</b>Constructed drawing.</figcaption></figure>
-      <figure><img src="images/figure-color-study.jpg" alt="Color study">
-        <figcaption><b>Color Study</b>Painting.</figcaption></figure>
     </div>
   </section>
 
   <footer>
-    M.F.A., Painting, Drawing &amp; Printmaking &nbsp;·&nbsp; M.A., Visual Design &amp; Culture &nbsp;·&nbsp;
-    M.S., Biomedical Visualization &nbsp;·&nbsp; B.A., University of Chicago<br>
-    © Alex Donnelly. Selected work; additional pieces available on request.
+    <span class="deg">M.F.A., Painting, Drawing &amp; Printmaking</span> &nbsp;·&nbsp;
+    <span class="deg">M.A., Visual Design &amp; Culture</span> &nbsp;·&nbsp;
+    <span class="deg">M.S., Biomedical Visualization</span> &nbsp;·&nbsp;
+    <span class="deg">B.A., University of Chicago</span><br>
+    © Alex Donnelly. Detailed project case studies available on request.
   </footer>
 </div>
 
-<div id="lb"><img src="" alt=""><div class="cap"></div></div>
+<div id="lb">
+  <button id="lbClose" aria-label="Close">&times;</button>
+  <img src="" alt=""><div class="cap"></div>
+</div>
 <script>
   var lb=document.getElementById('lb'), lbImg=lb.querySelector('img'), lbCap=lb.querySelector('.cap');
+  function closeLb(){lb.classList.remove('open');lbImg.src='';}
   document.querySelectorAll('figure img').forEach(function(im){
     im.addEventListener('click',function(){
       lbImg.src=im.src;
@@ -146,8 +147,10 @@
       lb.classList.add('open');
     });
   });
-  lb.addEventListener('click',function(){lb.classList.remove('open');lbImg.src='';});
-  document.addEventListener('keydown',function(e){if(e.key==='Escape'){lb.classList.remove('open');lbImg.src='';}});
+  document.getElementById('lbClose').addEventListener('click',closeLb);
+  lbImg.addEventListener('click',closeLb);
+  lb.addEventListener('click',function(e){if(e.target===lb)closeLb();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLb();});
 </script>
 </body>
 </html>
