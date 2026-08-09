@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5SEJFHV82K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-5SEJFHV82K');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Chronology Analysis: A Worked Case Study | Alex Donnelly</title>
+    <meta
+      name="description"
+      content="A de-identified case study: evaluating an AI-assisted medical chronology workflow against its manual baseline, failure modes, areas of success, a scoring rubric, and what systematic comparison revealed."
+    >
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.png" sizes="48x48">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=7">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="The Human Layer home">
+        <span class="brand-mark" aria-hidden="true">HL</span>
+        <span>
+          <strong>The Human Layer</strong>
+          <small>Alex Donnelly</small>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#approach">Approach</a>
+        <a href="index.html#pilot">The pilot</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#playbook">Playbook</a>
+        <a href="index.html#why">Why this work</a>
+        <a href="index.html#writing">Writing</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Selected analysis &middot; Medical-legal AI</p>
+          <h2>Evaluating an AI-assisted medical chronology workflow</h2>
+          <p>
+            Legal AI tools can summarize a medical record set in minutes. A guiding principle in legal AI: the
+            tool is a collaborator, and it should never replace the expert&rsquo;s greatest asset,
+            judgment. The emerging professional skill is knowing how to work with the work product of that AI
+            collaborator: when to trust the result, and when to be skeptical of it. This case study walks through
+            how I evaluated an AI-assisted chronology workflow, one of the predetermined foci of our pilot: how I
+            compared it against the manual baseline, the error states I found, the areas of success, and what the
+            totality of results told us.
+          </p>
+        </div>
+
+        <div class="project-preview" role="note">
+          <strong>About this case study</strong>
+          <p>
+            This page is drawn from real pilot experience, generalized for publication. Every example below is a
+            fictionalized composite written to illustrate the patterns I observed. No client information, patient
+            data, firm documents, or actual vendor output appears on this page.
+          </p>
+        </div>
+      </section>
+
+      <section class="section muted">
+        <div class="section-heading">
+          <p class="eyebrow">Part 1</p>
+          <h2>The method: same workflow, before and after</h2>
+          <p>
+            The design was deliberately simple. I took a classic medical-records workflow, building a
+            litigation chronology from a large record set, and ran it the way we always had: by hand, by
+            an experienced preparer, producing a vetted work product. Then I ran the same workflow with an
+            AI-assisted first pass, and systematically compared the two: entry by entry, breaking the differences
+            down into error states and areas of success. Because the manual version was the baseline, every
+            difference was attributable and explainable, I was not judging the AI against an impression,
+            but against the standard the workflow already had to meet.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Part 2</p>
+          <h2>Error states: five failure modes</h2>
+          <p>
+            Most of what the AI produced was accurate, which is exactly what makes the failures
+            dangerous. Each finding below pairs an illustrative pattern with the litigation stakes and the review
+            technique that catches it before it reaches an attorney.
+          </p>
+        </div>
+
+        <div class="findings-list">
+          <article class="finding">
+            <h3><span>F1</span> Date error</h3>
+            <p class="vs"><strong>Illustrative pattern:</strong> the summary mistakenly places surgery on March
+            15; the operative note header reads March 14. The software misread an attending&rsquo;s note as the
+            original operative note.</p>
+            <p>
+              A one-day slip looks trivial until the timeline becomes the case. In a delayed-diagnosis theory,
+              every interval (surgery to symptoms, symptoms to discharge, discharge to re-presentation) is an argument. Medical records are subtle and complex: they are iterative, new layers are
+              placed over older ones, and learning to interpret them takes time. Right now, our staff are better
+              than the AI at that. An incorrect anchor date silently shifts all of them.
+            </p>
+            <p class="catch"><strong>How to catch it:</strong> never accept a date from a summary; verify every
+            date against the document header, not the narrative. Dates are the first thing I anchor-check.</p>
+          </article>
+
+          <article class="finding">
+            <h3><span>F2</span> Critical omission</h3>
+            <p class="vs"><strong>Illustrative pattern:</strong> the summary skips an overnight nursing flow
+            sheet documenting tachycardia, a low-grade fever, and a page to the on-call physician. The AI failed
+            to connect two disparate parts of the record, the flow sheet and the related provider notes
+            sat a thousand pages apart, and the size and complexity of the set overwhelmed it.</p>
+            <p>
+              The omitted record is the earliest documented sign of deterioration, and it&rsquo;s nursing
+              documentation, which AI summarizers under-weight relative to physician notes. Whether the first
+              warning came at 4:10 or 4:55 can decide what the discharging physician should have known. Learning
+              to weave a record&rsquo;s scattered layers together takes human preparers years, and at this
+              stage, some tasks are simply too large and diffuse for the tools.
+            </p>
+            <p class="catch"><strong>How to catch it:</strong> a completeness sweep keyed to vital-sign entries
+            and pages/escalations, not just provider notes. I reconcile the chronology against a document
+            inventory before reading a single summary sentence.</p>
+          </article>
+
+          <article class="finding">
+            <h3><span>F3</span> Misattribution</h3>
+            <p class="vs"><strong>Illustrative pattern:</strong> an overnight evaluation by a resident is
+            attributed to the attending physician.</p>
+            <p>
+              Who knew what, and at what level of responsibility, is the spine of a malpractice case. Attributing
+              a resident&rsquo;s hedged overnight impression to the attending misstates the supervision chain, and would hand opposing counsel an impeachment moment at deposition.
+            </p>
+            <p class="catch"><strong>How to catch it:</strong> an author cross-check: every actor named in the
+            chronology gets verified against the signature block of the cited record. The mechanism here mirrors
+            the date error, confusion between layered notes, this time about a note&rsquo;s author rather
+            than its date. That ambiguity is common in provider notes, and discerning it is a skill preparers
+            build with experience.</p>
+          </article>
+
+          <article class="finding">
+            <h3><span>F4</span> Certainty inflation</h3>
+            <p class="vs"><strong>Illustrative pattern:</strong> &ldquo;possible early infection versus normal
+            post-operative inflammation&rdquo; becomes &ldquo;patient was diagnosed with a post-operative
+            infection.&rdquo;</p>
+            <p>
+              The record documents a differential, clinical uncertainty, and the AI flattened it
+              into a diagnosis. That single word change reverses the case: if infection was &ldquo;diagnosed,&rdquo;
+              discharge that morning is indefensible; if it was one possibility being monitored, the standard of
+              care question is live. This is the most consequential failure mode I encounter.
+            </p>
+            <p class="catch"><strong>How to catch it:</strong> hedge-language preservation review, every
+            &ldquo;possible,&rdquo; &ldquo;versus,&rdquo; &ldquo;rule out,&rdquo; and &ldquo;monitor&rdquo; in a
+            source must survive into the summary or the summary is wrong.</p>
+          </article>
+
+          <article class="finding">
+            <h3><span>F5</span> Unsupported assertion</h3>
+            <p class="vs"><strong>Illustrative pattern:</strong> &ldquo;all laboratory results were reviewed
+            prior to discharge&rdquo;, while the chart shows labs still pending when the patient left.</p>
+            <p>
+              Nothing in the record supports the claim, the AI inferred a tidy narrative that the
+              documents contradict. A pending-at-discharge lab can be the most important fact in the record set,
+              and the summary asserts its opposite.
+            </p>
+            <p class="catch"><strong>How to catch it:</strong> source traceability: every assertion in the
+            chronology must cite a record I can open. Claims with no citation are treated as hallucinated until
+            proven otherwise, and result-release timestamps get checked against discharge times in every
+            post-op case. The model simply lacked the inquisitiveness, the complex, high-level thinking required to contextualize its own claim against the record and catch the error.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section muted">
+        <div class="section-heading">
+          <p class="eyebrow">Part 3</p>
+          <h2>Areas of success</h2>
+          <p>
+            A fair evaluation records what worked as carefully as what failed, and several things clearly
+            worked.
+          </p>
+        </div>
+
+        <div class="enablement-cards">
+          <article>
+            <span>01</span>
+            <h4>Speed of the first pass</h4>
+            <p>A first pass in minutes against a manual baseline measured in days. The catch, covered in the
+            takeaway: at current reliability, the review the output demanded consumed much of that gain.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h4>Structural consistency</h4>
+            <p>Uniform entry format, normalized dates, and litigation-usable organization, the kind of
+            consistency that varies between human preparers under deadline.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h4>Routine coverage</h4>
+            <p>The majority of routine entries were captured accurately. The errors concentrated where judgment,
+            attribution, and clinical nuance live, which is itself a finding.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h4>A new reviewer posture</h4>
+            <p>The preparer&rsquo;s work shifted from authoring to verification, less depleting, and
+            focused exactly where the expert&rsquo;s judgment adds the most value.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Part 4</p>
+          <h2>What systematic comparison revealed</h2>
+          <p>
+            Breaking results into error states and successes did more than score a tool, it taught us
+            about the workflow itself, and where the technology stands on its maturity curve.
+          </p>
+        </div>
+
+        <div class="findings-list">
+          <article class="finding">
+            <h3><span>R1</span> Prompt subjectivity drives variance</h3>
+            <p>
+              Results varied meaningfully with how the task was phrased and who phrased it. Two preparers asking
+              for &ldquo;the same&rdquo; chronology could receive different work products. That variance is itself
+              a finding: it argues for standardized prompt patterns in the near term, and it identified
+              this workflow as one where agentic approaches, which structure the task into supervised steps rather
+              than relying on a single prompt, would likely help most.
+            </p>
+          </article>
+          <article class="finding">
+            <h3><span>R2</span> An honest verdict: beyond current scope</h3>
+            <p>
+              Based on the totality of the qualitative results, we determined that this particular task was
+              beyond the current scope of the enterprise products available to us. That is not a failure of the
+              pilot. It is precisely the kind of information a pilot exists to produce. It told us where
+              human workflow remains primary, prevented misplaced trust in an unready capability, and gave us a
+              documented baseline to retest against.
+            </p>
+          </article>
+          <article class="finding">
+            <h3><span>R3</span> A growth mindset, grounded in iteration</h3>
+            <p>
+              I expect results to improve as capabilities advance, and our error taxonomy means future versions
+              can be retested against the same standard, making progress measurable rather than anecdotal.
+              That is the deeper argument for starting now: without beginning the iterative process and seeing
+              where the technology stands at different stages, its maturity is indiscernible. Firms that wait for
+              the tools to be &ldquo;ready&rdquo; will have no way of knowing when they are.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section muted">
+        <div class="section-heading">
+          <p class="eyebrow">Part 5</p>
+          <h2>Scoring rubric</h2>
+          <p>
+            The rubric I use to evaluate AI-generated chronologies, applied to this workflow. A tool doesn&rsquo;t
+            need a perfect score to be useful, it needs a known failure profile and a review workflow
+            matched to it.
+          </p>
+        </div>
+
+        <table class="rubric">
+          <thead>
+            <tr><th>Dimension</th><th>What it measures</th><th>Score</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Factual accuracy</td><td>Dates, values, and events match the source records</td><td>3 / 5</td></tr>
+            <tr><td>Completeness</td><td>Clinically and legally significant entries are captured</td><td>3 / 5</td></tr>
+            <tr><td>Source traceability</td><td>Every assertion can be tied to a citable record</td><td>2 / 5</td></tr>
+            <tr><td>Attribution fidelity</td><td>Actions are credited to the correct provider and role</td><td>2 / 5</td></tr>
+            <tr><td>Uncertainty preservation</td><td>Hedged clinical language survives summarization</td><td>1 / 5</td></tr>
+            <tr><td>Litigation usability</td><td>Output structure supports issue-spotting and case theory</td><td>4 / 5</td></tr>
+          </tbody>
+        </table>
+
+        <div class="project-preview" role="note">
+          <strong>The takeaway</strong>
+          <p>
+            The data told its clearest story in the rubric&rsquo;s worst score: uncertainty preservation. With
+            respect to the product&rsquo;s capacity to wrap its head around large medical narratives, the models
+            simply weren&rsquo;t picking up subtlety, they over-summarized, flattening exactly the hedged,
+            layered language where a chronology&rsquo;s richness lives. That is where the value of this work
+            product is concentrated, and it is where the AI fell just short of the human level of operational
+            competency. An unreviewed first pass might save a litigation team many hours, and could cost
+            them the case. In practice, the review that the pitfalls demanded was so extensive that the time
+            savings washed out, and we made the honest call: wait for advances in the technology, then
+            re-implement this workflow. For now, we wait and see.
+          </p>
+          <p>
+            That is the state of legal AI today, and it should shape your approach to every legal question and
+            problem you put to it. It is why granularity and specificity are critical, and why adoption is an
+            enablement problem: the tools are powerful, the failure modes are learnable, and the review workflow
+            is teachable. Teams that evaluate systematically gain a documented baseline against every future
+            version, and will be positioned to stand workflows up immediately when a model upgrade finally
+            clears the bar. Teams that never enter the sandbox will have no foundation in place when chronologies,
+            and tasks like them, become far more capable.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Want to compare evaluation notes?</h2>
+          <p>
+            I&rsquo;m always glad to talk about QC workflows for AI-assisted legal work, what to measure,
+            what to teach, and where the tools are heading.
+          </p>
+        </div>
+        <a class="button primary" href="mailto:a.james.donnelly@gmail.com">Start a conversation</a>
+      </section>
+    </main>
+    <script src="script.js?v=6"></script>
+  </body>
+</html>

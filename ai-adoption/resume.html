@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5SEJFHV82K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-5SEJFHV82K');
+    </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alex Donnelly, Resume</title>
+<style>
+  :root {
+    --ink: #191919;
+    --muted: #5b5852;
+    --line: #d9d3c8;
+    --paper: #ffffff;
+    --blue: #4a9c2d;
+    --sidebar-w: 2.5in;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0; background: transparent; color: var(--ink);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    font-size: 9.7pt; line-height: 1.45;
+  }
+  @media print {
+    body::before { content: ""; position: fixed; top: 0; bottom: 0; left: 0; width: var(--sidebar-w); background: var(--ink); z-index: -1; }
+  }
+  .page { display: grid; grid-template-columns: var(--sidebar-w) 1fr; max-width: 8.5in; margin: 0 auto; }
+  .sidebar { color: #f6f4ef; background: var(--ink); padding: 0.55in 0.28in 0.4in 0.32in; }
+  .main { background: var(--paper); }
+  .sidebar h2 { margin: 0 0 8px; font-size: 8.5pt; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: #cbb3ff; }
+  .sidebar section { margin-bottom: 22px; }
+  .sidebar p { margin: 0 0 7px; }
+  .contact p { margin: 0 0 6px; font-size: 9pt; word-break: break-word; }
+  .contact a { color: inherit; text-decoration: none; }
+  .edu-item { margin-bottom: 13px; }
+  .edu-item strong { display: block; font-size: 9.4pt; line-height: 1.3; }
+  .edu-item em { display: block; font-style: normal; color: #e3ddd2; font-size: 9pt; }
+  .edu-item span { display: block; color: #b9b3a8; font-size: 8.7pt; }
+  .skill-group { margin-bottom: 10px; }
+  .skill-group strong { display: block; font-size: 9pt; }
+  .skill-group span { color: #e3ddd2; font-size: 9pt; }
+  .main { padding: 0.5in 0.45in 0.4in 0.4in; }
+  .name-block { margin-bottom: 14px; }
+  h1 { margin: 0; font-family: Inter, "Segoe UI", sans-serif; font-weight: 800; font-size: 24pt; letter-spacing: -0.01em; }
+  .title-line { margin: 4px 0 0; color: var(--blue); font-size: 10.0pt; font-weight: 700; }
+  .summary { margin: 10px 0 0; color: var(--muted); font-size: 9.7pt; }
+  .main h2 { margin: 20px 0 10px; padding-bottom: 4px; border-bottom: 1.5px solid var(--blue); font-size: 10.5pt; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); }
+  .job { margin-bottom: 13px; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .job-head strong { font-size: 10.2pt; }
+  .job-head .dates { color: var(--muted); font-size: 8.8pt; white-space: nowrap; font-style: italic; }
+  .role { margin: 1px 0 4px; color: var(--muted); font-style: italic; font-size: 9.4pt; }
+  ul { margin: 4px 0 0; padding-left: 16px; }
+  li { margin-bottom: 3px; }
+  .avoid-break { break-inside: avoid; }
+  @page { size: letter; margin: 0.5in;
+    @bottom-left { content: "Alex Donnelly \2014 Resume"; font-family: Inter, Arial, sans-serif; font-size: 7.5pt; color: #8a857c; }
+    @bottom-right { content: "Page " counter(page) " of " counter(pages); font-family: Inter, Arial, sans-serif; font-size: 7.5pt; color: #8a857c; }
+  }
+  @media print {
+    html, body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .page { max-width: none; }
+    .sidebar { padding: 0.3in 0.24in; }
+    .main { padding: 0.28in 0 0.2in 0.38in; }
+    .contact { margin-top: 0 !important; }
+    .main h2 { break-after: avoid; }
+    p, li { orphans: 3; widows: 3; }
+    .sidebar section { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+    <aside class="sidebar">
+      <section class="contact" style="margin-top: 64px;">
+        <h2>Contact</h2>
+        <p>Highland Park, IL</p>
+        <p>(847) 338-8208</p>
+        <p><a href="mailto:a.james.donnelly@gmail.com">a.james.donnelly@gmail.com</a></p>
+        <p><a href="https://ajdonnelly.github.io/legal-ai-portfolio/">ajdonnelly.github.io/<br>legal-ai-portfolio</a></p>
+        <p><a href="https://www.linkedin.com/in/alexjdonnelly">linkedin.com/in/alexjdonnelly</a></p>
+      </section>
+
+      <section>
+        <h2>Core Skills</h2>
+        <div class="skill-group">
+          <strong>AI Adoption &amp; Enablement</strong>
+          <span>Role-based onboarding pathways, workshops (prompting, verifying outputs, citing), playbooks, guides &amp; FAQs, change management, champion programs, adoption &amp; value metrics</span>
+        </div>
+        <div class="skill-group">
+          <strong>Responsible AI &amp; Governance</strong>
+          <span>Confidentiality &amp; data classification, human-in-the-loop review, verifying output against source, hallucination/bias awareness, escalation; partners with Risk, Security, Knowledge &amp; IT</span>
+        </div>
+        <div class="skill-group">
+          <strong>Legal Operations &amp; Systems</strong>
+          <span>Clio, CaseFleet, DocketBird, Filevine, Relativity, Concordance, WinVantage, Blackboard LMS, led platform migrations; ran a firm end-to-end</span>
+        </div>
+        <div class="skill-group">
+          <strong>AI Tools</strong>
+          <span>Microsoft Copilot, Filevine LOIS, pilot design, output evaluation, prompt engineering, user training. Everyday user, with strict data compartmentalization: Claude &amp; Claude Cowork, ChatGPT, Gemini, NotebookLM, Perplexity; AI-assisted coding</span>
+        </div>
+        <div class="skill-group">
+          <strong>Technical</strong>
+          <span>Foundational full-stack skills (JavaScript, Python, SQL, HTML/CSS, Git/GitHub) from a coding bootcamp, refreshed through AI-assisted coding; a technical translator across teams</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <div class="edu-item">
+          <strong>University of Hawai&#x2bb;i at M&#x101;noa</strong>
+          <em>J.D. Candidate &middot; AI Law and Governance</em>
+          <span>William S. Richardson School of Law &middot; Matriculating Fall 2026</span>
+        </div>
+        <div class="edu-item">
+          <strong>University of Illinois Chicago</strong>
+          <em>M.S., Biomedical Visualization</em>
+          <span>Expected May 2026</span>
+        </div>
+        <div class="edu-item">
+          <strong>University of Wisconsin Extended Campus</strong>
+          <em>Full Stack Coding Bootcamp</em>
+          <span>2020</span>
+        </div>
+        <div class="edu-item">
+          <strong>University of Wisconsin&ndash;Madison</strong>
+          <em>M.F.A. (2019) &middot; M.A. (2018), with Distinction</em>
+          <span>Biological Visualization, Visual Culture</span>
+        </div>
+        <div class="edu-item">
+          <strong>University of Chicago</strong>
+          <em>B.A., Political Science</em>
+          <span>2013</span>
+        </div>
+      </section>
+    </aside>
+
+    <main class="main">
+      <div class="name-block">
+        <h1>Alex Donnelly</h1>
+        <p class="title-line">AI Adoption &amp; Enablement &nbsp;|&nbsp; Responsible GenAI in Law Firms &nbsp;|&nbsp; Legal Operations</p>
+        <p class="summary">
+          Legal-operations and enablement professional who helps legal teams adopt generative AI responsibly
+          and well. Most recently the firm-side contributor on an enterprise AI pilot, serving on the
+          AI committee, evaluating tools, building workflow guides, and training colleagues from staff to
+          partners. More than twelve years running a plaintiff-side firm end to end, through repeated waves of
+          technology adoption. Fluent in responsible-AI practice: confidentiality, human-in-the-loop
+          verification, and catching hallucinations. Beginning J.D. studies focused on AI law and
+          governance in Fall 2026.
+        </p>
+      </div>
+
+      <h2>Experience</h2>
+
+      <div class="job avoid-break">
+        <div class="job-head">
+          <strong>Hall Prangle LLC, Chicago, IL</strong>
+          <span class="dates">June 2025 &ndash; Present</span>
+        </div>
+        <p class="role">Senior Litigation Paralegal &middot; AI Committee &amp; Enterprise Pilot Contributor</p>
+        <ul>
+          <li>Serve on the firm&rsquo;s AI committee and enterprise AI pilot, integrating Microsoft Copilot
+          and Filevine&rsquo;s LOIS into daily legal work in a governed environment</li>
+          <li>Co-created and presented a 90-day AI pilot program for the office, governance
+          principles, scope boundaries, an approved tech stack (Filevine + Claude), phased rollout, and
+          success metrics, with a colleague on the AI team</li>
+          <li>Led the paralegal workflow assessment, scoping a small set of high-value, automatable workflows
+          with Filevine&rsquo;s change managers, the work that turned my focus toward AI change
+          management</li>
+          <li>Co-led AI training for colleagues from office managers to partners; built and documented
+          workflow guides and adoption best practices</li>
+          <li>Evaluate AI output against source to catch errors and reliability risks, practicing and
+          coaching human-in-the-loop verification, hallucination awareness, and confidentiality</li>
+          <li>Build and quality-check medical chronologies from large record sets, the same
+          verify-against-source discipline that makes AI output trustworthy</li>
+        </ul>
+      </div>
+
+      <div class="job avoid-break">
+        <div class="job-head">
+          <strong>Law Offices of Michael M. Mulder, Chicago, IL</strong>
+          <span class="dates">2013 &ndash; 2025</span>
+        </div>
+        <p class="role">Paralegal &amp; Operations (sole non-attorney staff) &middot; Plaintiff-Side Employment, ERISA &amp; Corporate Law</p>
+        <ul>
+          <li>Ran the full operations of a boutique plaintiff-side firm single-handedly, intake through
+          resolution and billing, through repeated waves of technology adoption</li>
+          <li>Led the firm&rsquo;s system-of-record migrations (WinVantage to Clio, Clio to CaseFleet,
+          PACER-based tracking to DocketBird) and got busy legal professionals to trust new tools</li>
+          <li>Coordinated large-scale discovery with co-counsel in class-action and ERISA/ESOP litigation, with document sets reaching ~1,000,000, and built the repeatable processes a one-person
+          operation requires</li>
+        </ul>
+      </div>
+
+      <div class="job avoid-break">
+        <div class="job-head">
+          <strong>SwedelsonGottlieb, LLC</strong>
+          <span class="dates">2009 &ndash; 2012</span>
+        </div>
+        <p class="role">Head Legal Biller &amp; Assistant Bookkeeper</p>
+        <ul>
+          <li>Managed billing and collections for 200+ litigation clients at a 25+-attorney HOA-defense firm,
+          supporting attorneys with compliance and receivables</li>
+        </ul>
+      </div>
+
+      <h2>Teaching, Enablement &amp; Service</h2>
+
+      <div class="job avoid-break">
+        <div class="job-head">
+          <strong>GPPA Medical Scholars Program, University of Illinois Chicago</strong>
+          <span class="dates">2024 &ndash; Present</span>
+        </div>
+        <p class="role">Graduate Assistant &amp; Curriculum Coordinator</p>
+        <ul>
+          <li>Develop curriculum and learning materials; maintain the program knowledge base; coordinate
+          onboarding for each incoming cohort; administer Blackboard and program communication platforms</li>
+        </ul>
+      </div>
+
+      <div class="job avoid-break">
+        <div class="job-head">
+          <strong>University of Chicago Booth School of Business</strong>
+          <span class="dates">2006 &ndash; 2008</span>
+        </div>
+        <p class="role">Development &amp; Executive Assistant</p>
+        <ul>
+          <li>Supported the Dean and Office of Advancement on fundraising logistics contributing to $57M+ in
+          campaign donations</li>
+        </ul>
+      </div>
+    </main>
+  </div>
+  <script src="script.js?v=6"></script>
+</body>
+</html>

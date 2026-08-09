@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 684" font-family="Inter, Arial, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">The AI Adoption Maturity Curve</title><desc id="d">Six ascending stages from Awareness to an AI-Enabled Operating Model. Most teams roughly 18 months in sit around Personal Productivity and Workflow Transformation; the goal is to move up toward integrated, strategic value.</desc>
+<defs><marker id="ah" markerWidth="10" markerHeight="10" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#5a6672"/></marker></defs>
+<rect width="1240" height="684" fill="#ffffff"/>
+<text x="60" y="46" font-size="24" font-weight="700" fill="#16212b">The AI Adoption Maturity Curve</text>
+<text x="60" y="74" font-size="14.5" fill="#5a6672">From isolated experiments to an integrated, AI-enabled operating model.</text>
+<rect x="446" y="150" width="338" height="470" rx="16" fill="#faeeda" opacity="0.55"/>
+<rect x="446" y="150" width="338" height="30" rx="10" fill="#faeeda"/>
+<text x="615" y="170" font-size="12.5" font-weight="800" fill="#8a5206" text-anchor="middle" letter-spacing="1">MOST TEAMS ARE HERE ~18 MONTHS IN</text>
+<path d="M120,520 C219.0,520 219.0,454 318,454 C417.0,454 417.0,388 516,388 C615.0,388 615.0,322 714,322 C813.0,322 813.0,256 912,256 C1011.0,256 1011.0,190 1110,190" fill="none" stroke="#0f8c8c" stroke-width="3" stroke-linecap="round"/>
+<line x1="120" y1="520" x2="120" y2="502" stroke="#dfe4e7" stroke-width="1.5"/>
+<circle cx="120" cy="520" r="8" fill="#8ADCC0" stroke="#ffffff" stroke-width="2.5"/>
+<rect x="15" y="406" width="210" height="96" rx="12" fill="#ffffff" stroke="#dfe4e7" stroke-width="1.5"/>
+<circle cx="43" cy="436" r="14" fill="#8ADCC0"/>
+<text x="43" y="441" font-size="14" font-weight="800" fill="#0b5745" text-anchor="middle">1</text>
+<text x="67" y="432" font-size="14.5" font-weight="700" fill="#16212b">Awareness</text>
+<text x="33" y="474" font-size="12.5" fill="#5a6672">The tools exist; people know it</text>
+<line x1="318" y1="454" x2="318" y2="472" stroke="#dfe4e7" stroke-width="1.5"/>
+<circle cx="318" cy="454" r="8" fill="#57C9A8" stroke="#ffffff" stroke-width="2.5"/>
+<rect x="213" y="472" width="210" height="96" rx="12" fill="#ffffff" stroke="#dfe4e7" stroke-width="1.5"/>
+<circle cx="241" cy="502" r="14" fill="#57C9A8"/>
+<text x="241" y="507" font-size="14" font-weight="800" fill="#0b5745" text-anchor="middle">2</text>
+<text x="265" y="498" font-size="14.5" font-weight="700" fill="#16212b">Experimentation</text>
+<text x="231" y="540" font-size="12.5" fill="#5a6672">Individuals try AI, ad hoc</text>
+<line x1="516" y1="388" x2="516" y2="370" stroke="#dfe4e7" stroke-width="1.5"/>
+<circle cx="516" cy="388" r="8" fill="#28AE8C" stroke="#ffffff" stroke-width="2.5"/>
+<rect x="411" y="274" width="210" height="96" rx="12" fill="#ffffff" stroke="#dfe4e7" stroke-width="1.5"/>
+<circle cx="439" cy="304" r="14" fill="#28AE8C"/>
+<text x="439" y="309" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle">3</text>
+<text x="463" y="300" font-size="14.5" font-weight="700" fill="#16212b">Personal</text>
+<text x="463" y="318" font-size="14.5" font-weight="700" fill="#16212b">Productivity</text>
+<text x="429" y="342" font-size="12.5" fill="#5a6672">Regular use in personal work</text>
+<line x1="714" y1="322" x2="714" y2="340" stroke="#dfe4e7" stroke-width="1.5"/>
+<circle cx="714" cy="322" r="8" fill="#1D9E75" stroke="#ffffff" stroke-width="2.5"/>
+<rect x="609" y="340" width="210" height="96" rx="12" fill="#ffffff" stroke="#dfe4e7" stroke-width="1.5"/>
+<circle cx="637" cy="370" r="14" fill="#1D9E75"/>
+<text x="637" y="375" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle">4</text>
+<text x="661" y="366" font-size="14.5" font-weight="700" fill="#16212b">Workflow</text>
+<text x="661" y="384" font-size="14.5" font-weight="700" fill="#16212b">Transformation</text>
+<text x="627" y="408" font-size="12.5" fill="#5a6672">Repeatable, AI-enhanced</text>
+<text x="627" y="425" font-size="12.5" fill="#5a6672">workflows</text>
+<line x1="912" y1="256" x2="912" y2="238" stroke="#dfe4e7" stroke-width="1.5"/>
+<circle cx="912" cy="256" r="8" fill="#14795F" stroke="#ffffff" stroke-width="2.5"/>
+<rect x="807" y="142" width="210" height="96" rx="12" fill="#ffffff" stroke="#dfe4e7" stroke-width="1.5"/>
+<circle cx="835" cy="172" r="14" fill="#14795F"/>
+<text x="835" y="177" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle">5</text>
+<text x="859" y="168" font-size="14.5" font-weight="700" fill="#16212b">Institutional</text>
+<text x="859" y="186" font-size="14.5" font-weight="700" fill="#16212b">Knowledge</text>
+<text x="825" y="210" font-size="12.5" fill="#5a6672">Wins shared, documented, taught</text>
+<line x1="1110" y1="190" x2="1110" y2="208" stroke="#dfe4e7" stroke-width="1.5"/>
+<circle cx="1110" cy="190" r="8" fill="#0F5247" stroke="#ffffff" stroke-width="2.5"/>
+<rect x="1005" y="208" width="210" height="96" rx="12" fill="#ffffff" stroke="#dfe4e7" stroke-width="1.5"/>
+<circle cx="1033" cy="238" r="14" fill="#0F5247"/>
+<text x="1033" y="243" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle">6</text>
+<text x="1057" y="234" font-size="14.5" font-weight="700" fill="#16212b">AI-Enabled Operating</text>
+<text x="1057" y="252" font-size="14.5" font-weight="700" fill="#16212b">Model</text>
+<text x="1023" y="276" font-size="12.5" fill="#5a6672">Built into how the firm works</text>
+<line x1="120" y1="650" x2="1110" y2="650" stroke="#5a6672" stroke-width="1.5" marker-end="url(#ah)"/>
+<text x="120" y="640" font-size="13" font-style="italic" fill="#5a6672">Isolated experiments</text>
+<text x="1110" y="640" font-size="13" font-weight="600" fill="#0f8c8c" text-anchor="end">Integrated, strategic value</text>
+</svg>
