@@ -92,9 +92,9 @@ footer .deg{color:var(--ink);font-weight:600;}
   font-size:.85rem;padding:0 20px;}
 
 /* about (landing) */
-.about-flex{display:grid;grid-template-columns:190px 1fr;gap:34px;align-items:start;margin-top:6px;}
-.about-flex img{width:100%;border-radius:6px;border:1px solid var(--line);box-shadow:0 10px 30px rgba(40,20,50,.10);}
-@media(max-width:640px){.about-flex{grid-template-columns:1fr;gap:20px;max-width:340px;}}
+.about-flex{display:grid;grid-template-columns:130px 1fr;gap:30px;align-items:start;margin-top:6px;}
+.about-flex img{width:130px;height:130px;object-fit:cover;border-radius:6px;border:1px solid var(--line);box-shadow:0 10px 30px rgba(40,20,50,.10);}
+@media(max-width:640px){.about-flex{grid-template-columns:1fr;gap:16px;}}
 
 /* hero (landing) */
 header.page.hero{padding:52px 0 34px;}
